@@ -49,6 +49,9 @@ public class MyService {
         Entity1 e1 = entity1Repo.findAll().get(0);
         Entity2 e2 = e1.getEntity2().get(0);
 
+        // this change makes the difference
+        // e1.getEntity2().remove(0);
+
         entity2Repo.delete(e2);
     }
 
